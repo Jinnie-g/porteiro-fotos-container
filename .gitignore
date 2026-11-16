@@ -1,0 +1,22 @@
+# Ambientes virtuais
+venv/
+env/
+.venv/
+
+# Caches de sistema e Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Dados locais pesados e saídas (para não estourar o limite do Git)
+data/
+outputs/
+*.npy
+*.parquet
+*.sqlite
+*.csv
+
+# Configurações de IDE
+.vscode/
+.idea/

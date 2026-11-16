@@ -1,0 +1,11 @@
+torch
+torchvision
+roboflow
+imagehash
+scikit-learn
+pandas
+numpy
+pillow
+tqdm
+pyarrow
+opencv-python
