@@ -27,3 +27,6 @@ outputs/
 # Resultados leves de cada execução são versionados (manifesto, auditorias, amostras)
 !results/**/*.csv
 !results/**/*.parquet
+
+# Backups locais do git
+*.bundle
