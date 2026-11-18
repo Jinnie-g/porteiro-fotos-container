@@ -30,3 +30,5 @@ outputs/
 
 # Backups locais do git
 *.bundle
+# Rótulos e amostras de rotulagem são versionados
+!labels/*.csv

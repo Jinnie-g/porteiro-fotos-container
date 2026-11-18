@@ -10,8 +10,8 @@ scipy
 pyyaml
 requests
 pytest
-# Próximas etapas (E7+: DINOv2 em GPU, treino da triagem)
+# Seção 16: DINOv2 (pesos oficiais via timm), teste de dip
 torch
 torchvision
-roboflow
-tqdm
+timm
+diptest
