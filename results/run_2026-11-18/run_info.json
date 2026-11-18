@@ -1,0 +1,84 @@
+{
+ "data_utc": "2026-11-18T14:46:44+00:00",
+ "versao_pipeline": "0.1.0",
+ "git_commit": "455de20679c5cc92aa68c072c0aa823e0e68ca35",
+ "git_sujo": false,
+ "python": "3.13.18",
+ "plataforma": "Linux-6.18.44-fc-v595-x86_64-with-glibc2.39",
+ "config": {
+  "roboflow": {
+   "workspace": "giovanna-alcantara",
+   "project": "container-damage-detection-lt-6ylwp"
+  },
+  "seed": 42,
+  "dedup": {
+   "phash_max_hamming": 6,
+   "cosine_min": 0.95,
+   "require_both": true,
+   "same_name_cosine_min": 0.8
+  },
+  "borders": {
+   "lum_max": 12,
+   "std_max": 6,
+   "min_frac": 0.01
+  },
+  "split": {
+   "n_splits": 6
+  },
+  "labeling": {
+   "n_sample": 800,
+   "random_frac": 0.3
+  }
+ },
+ "dedup": {
+  "n_imagens": 5761,
+  "exatas_extras": 0,
+  "pares_phash": 3546,
+  "pares_cosseno": 458,
+  "pares_ambos": 450,
+  "pares_quase_dup_usados": 450,
+  "n_dup_clusters": 1949,
+  "imagens_em_cluster_maior_que_1": 5427,
+  "maior_dup_cluster": 30,
+  "n_grupos": 1644,
+  "maior_grupo": 63,
+  "frac_redundante": 0.6616906787016144,
+  "n_nomes_origem": 1845
+ },
+ "vazamento": {
+  "sha256_em_mais_de_um_split": {
+   "grupos": 0,
+   "imagens": 0
+  },
+  "nome_origem_em_mais_de_um_split": {
+   "grupos": 889,
+   "imagens": 3960
+  },
+  "dup_cluster_id_em_mais_de_um_split": {
+   "grupos": 909,
+   "imagens": 3833
+  },
+  "container_code_em_mais_de_um_split": {
+   "grupos": 104,
+   "imagens": 1239
+  },
+  "group_id_em_mais_de_um_split": {
+   "grupos": 803,
+   "imagens": 4197
+  },
+  "valid_vizinho_treino_acima_limiar": {
+   "n": 109,
+   "de": 1151,
+   "frac": 0.0947002606429192,
+   "mesma_foto_origem": 820,
+   "identicas_sha": 0
+  },
+  "test_vizinho_treino_acima_limiar": {
+   "n": 58,
+   "de": 577,
+   "frac": 0.10051993067590988,
+   "mesma_foto_origem": 391,
+   "identicas_sha": 0
+  }
+ }
+}
