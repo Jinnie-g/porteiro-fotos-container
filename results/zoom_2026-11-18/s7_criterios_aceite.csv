@@ -1,0 +1,7 @@
+criterio,valor,limite,passou
+"Precisão de A (limite inferior do IC, teste fixo) >= 0,90",0.5655085052479191,0.9,False
+"κ ponderado modelo × rótulo (ordinal, dev) >= 0,6",0.6901001112347052,0.6,True
+"ECE (teste fixo) <= 0,05",0.03881424746221157,0.05,True
+"Precisão de A >= 0,85 em cada fonte com n >= 30",1.0,0.85,True
+Ganho sobre o trivial (IC pareado exclui zero),0.4160287846831827,0.0,True
+Ganho sobre o só-fonte (IC pareado exclui zero),0.47078421315429475,0.0,True
