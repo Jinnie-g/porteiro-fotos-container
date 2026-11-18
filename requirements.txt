@@ -1,11 +1,17 @@
+# Núcleo do tratamento (F0/F1: E1 a E6)
+numpy
+pandas
+pyarrow
+pillow
+opencv-python-headless
+imagehash
+scikit-learn
+scipy
+pyyaml
+requests
+pytest
+# Próximas etapas (E7+: DINOv2 em GPU, treino da triagem)
 torch
 torchvision
 roboflow
-imagehash
-scikit-learn
-pandas
-numpy
-pillow
 tqdm
-pyarrow
-opencv-python

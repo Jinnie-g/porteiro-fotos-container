@@ -20,3 +20,10 @@ outputs/
 # Configurações de IDE
 .vscode/
 .idea/
+
+# Segredos
+.env
+
+# Resultados leves de cada execução são versionados (manifesto, auditorias, amostras)
+!results/**/*.csv
+!results/**/*.parquet

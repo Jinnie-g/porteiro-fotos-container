@@ -1,0 +1,33 @@
+# Configuração do pipeline de tratamento (guia metodológico, seções 3, 4 e 13).
+# A chave da API NÃO fica aqui: exporte ROBOFLOW_API_KEY no ambiente.
+roboflow:
+  workspace: giovanna-alcantara
+  project: container-damage-detection-lt-6ylwp
+
+paths:
+  data_root: data/roboflow          # imagens + anotações (fora do Git)
+  results_root: results             # saídas leves versionadas
+
+seed: 42
+
+# E3: limiares iniciais (calibrar com dedup review_pairs)
+dedup:
+  phash_max_hamming: 6
+  cosine_min: 0.95
+  require_both: true                # quase duplicata = pHash E embedding concordando
+  same_name_cosine_min: 0.80        # cópias da mesma foto de origem (nome igual + embedding)
+
+# E4: bordas pretas (seção 4)
+borders:
+  lum_max: 12                       # média de luminância da linha/coluna
+  std_max: 6                        # desvio padrão da linha/coluna
+  min_frac: 0.01                    # largura mínima (fração da dimensão)
+
+# E5: split agrupado
+split:
+  n_splits: 6                       # fold 0 = teste fixo (~17% dos grupos)
+
+# E6: amostra para rotulagem
+labeling:
+  n_sample: 800
+  random_frac: 0.30
